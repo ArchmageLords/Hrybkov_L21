@@ -3,7 +3,6 @@ package com.example.hrybkov_l21
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hrybkov_l21.databinding.FanActivityBinding
 

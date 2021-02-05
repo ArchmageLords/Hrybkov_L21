@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setupBinding()
         goToFan()
+        setNewData()
     }
 
     private fun setupBinding() {
@@ -24,6 +25,17 @@ class MainActivity : AppCompatActivity() {
     private fun goToFan() {
         binding.btnGoToFan.setOnClickListener {
             FanActivity.start(this)
+        }
+    }
+
+    private fun setNewData() {
+        val film = Film("Baby Boss", "Cartoon", 3.12F, 200.00F, R.drawable.boss_baby)
+        findViewById<FilmsViewGroup>(R.id.filmsViewGroupExample).apply {
+            setTitle(film.title)
+            setCategory(film.category)
+            setRating(film.rating)
+            setPrice(film.price)
+            setImage(film.image)
         }
     }
 }
