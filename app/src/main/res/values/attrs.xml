@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FilmsViewGroup">
+        <attr name="poster" format="reference" />
+        <attr name="title" format="string" />
+        <attr name="film_category" format="string" />
+        <attr name="rating" format="float" />
+        <attr name="price" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="FanControllerView">
+        <attr name="fanOnColor" format="reference|color" />
+        <attr name="fanOffColor" format="reference|color" />
+    </declare-styleable>
+</resources>
